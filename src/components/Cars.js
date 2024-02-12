@@ -5,13 +5,14 @@ import CarForm from "./CarForm";
 
 const Cars = () => {
     const [cars, setCars] = useState([])
+    const [addTrigger, setAddTrigger] = useState(null)
     useEffect(() => {
         carService.getAll().then(({data}) => setCars(data))
-    }, []);
+    }, [addTrigger]);
     return (
         <div>
-            <CarForm/>
-            {cars.map(car => <Car car={car} key={car.id}/>)}
+            <CarForm setAddTrigger={setAddTrigger}/>
+            {cars.map(car => <Car setAddTrigger={setAddTrigger} car={car} key={car.id}/>)}
         </div>
     );
 };
