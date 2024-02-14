@@ -1,0 +1,9 @@
+.Todo{
+    display: flex;
+    flex-flow: column;
+    border: 2px black;
+    margin-bottom: 2vh;
+}
+.Todo p{
+    margin: 0;
+}

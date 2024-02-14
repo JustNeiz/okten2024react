@@ -1,0 +1,9 @@
+.Comment{
+    display: flex;
+    flex-flow: column;
+    border: 2px black;
+    margin-bottom: 2vw;
+}
+.Comment p{
+    margin: 0;
+}

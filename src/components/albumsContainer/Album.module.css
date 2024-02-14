@@ -1,0 +1,9 @@
+.Album{
+    display: flex;
+    flex-flow: column;
+    border: 2px black;
+    margin-bottom: 2vw;
+}
+.Album p{
+    margin: 0;
+}
