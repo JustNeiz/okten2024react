@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useLocation} from "react-router-dom";
+
+import css from './Post.module.css'
 import {postsService} from "../../services/postsService";
 
 const Post = () => {
@@ -9,10 +11,13 @@ const Post = () => {
         postsService.getById(postId).then(({data}) => setPost(data))
 
     }, []);
-    console.log(post);
+    const {id, userId, body, title} = post;
     return (
-        <div>
-            iuhaijn
+        <div className={css.Post}>
+            <p>postId: {id}</p>
+            <p>userId: {userId}</p>
+            <p>body: {body}</p>
+            <p>title: {title}</p>
         </div>
     );
 };

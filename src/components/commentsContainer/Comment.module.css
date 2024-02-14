@@ -3,6 +3,7 @@
     flex-flow: column;
     border: 2px black;
     margin-bottom: 2vw;
+    background-color: cornflowerblue;
 }
 .Comment p{
     margin: 0;
